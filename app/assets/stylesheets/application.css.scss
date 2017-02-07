@@ -16,7 +16,8 @@
  
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
- 
+
+//Topography Styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
@@ -28,28 +29,20 @@ h1, h2, h3 {
   background: linear-gradient(to left, #2C3E50 , #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+//Nav Styles
 .navbar {
   border: none;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a  {
   color:white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-nav > li > a {
-  color:white;
-}
-
-.navbar-default .navbar-brand:hover {
-  color:white;
-  opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color:white;
-  opacity: 0.75;
-}
-
+//Home Page Styles
 .home-callout {
   color:white;
   margin-top: -20px;
